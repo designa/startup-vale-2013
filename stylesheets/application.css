@@ -15,35 +15,12 @@
 }
 
 body {
-  font-family: "AvalonBook", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #FFFFFF;
   background-color: #000033;
+  color: #FFFFFF;
+  font-family: "AvalonBook", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
 }
-
-.icon {
-  display: inline-block;
-  background: url('../images/social-icons.png') no-repeat;
-  text-indent: 110%;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 48px;
-  height: 48px;
-  margin-right: 20px;
-}
-
-.icon:last-child {
-  margin-right: 0;
-}
-
-.icon a {
-  display: block;
-  width: inherit;
-  height: inherit;
-}
-
-.icon.twitter  { background-position: 0 0 }
-.icon.facebook { background-position: -48px 0 }
-.icon.linkedin { background-position: -96px 0 }
 
 .slogan {
   font-family: "AvalonDemi";
@@ -76,86 +53,43 @@ body {
   text-shadow: none;
   margin: 0;
   padding: 0;
-  background: url("../images/rupy-2013-logo-1.png") no-repeat center top; 
+  background: url("../images/rupy-2013-logo-1.png") no-repeat center top;
 }
 
 .jumbotron h1.logo, .slogan {
   height: 355px;
 }
 
-#newsletter {
-  margin-top: 50px;
-  margin-bottom: 35px;
-  text-align: center;
+.event-photo{
+  display: block;
+  height: 250px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 #newsletter form {
   margin: 0;
 }
 
-#newsletter .help-inline {
-  font-size: 22px;
-  margin-right: 10px;
-  color: #FFF;
+#newsletter #input-newsletter-email{
+  height: 36px;
+  width: 100%;
+
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
-#newsletter input {
-  height: 32px;
-  font-size: 22px;
-  -webkit-border-radius: 0;
-     -moz-border-radius: 0;
-          border-radius: 0;
-  -webkit-box-shadow: none;
-     -moz-box-shadow: none;
-          box-shadow: none;
+#other-events .event-photo{
+  height: 160px;
+  margin: 0 0 8px 0;
 }
 
-#newsletter input[type=submit] {
-  background: #E20031;
-  margin-left: 10px;
-  color: #FFF;
-  text-shadow: none;
-  height: 42px;
-  font-size: 22px;
-}
-
-#social-networks {
+.footer-copyright {
   text-align: center;
+  margin-bottom: 40px;
 }
 
-#social-networks ul {
-  margin: 0;
-  font-size: 0;
-  height: 40px;
-}
-
-#editions {
-  margin-top: 40px;
-  text-align: center;
-}
-
-#editions ul {
-  margin: auto 0;
-  list-style: none;
-  font-size: 20px;
-}
-
-#editions ul li {
-  display: inline;
-  padding: 0 8px;
-}
-
-#editions ul li:first-child {
-  padding-left: 0;
-}
-
-#editions ul li:first-child:after {
-  content: ':';
-}
-
-#editions ul li a {
-  color: #E20031;
-}
 
 @media (min-width: 1200px) {
   .slogan {
@@ -173,7 +107,7 @@ body {
   }
 
   .jumbotron h1.logo {
-    background-image: url("../images/rupy-2013-logo-2.png"); 
+    background-image: url("../images/rupy-2013-logo-2.png");
   }
 
   .jumbotron h1.logo, .slogan {
@@ -189,7 +123,7 @@ body {
 
   .jumbotron .span4, .jumbotron .span8 {
     width: 100%;
-    float: none;        
+    float: none;
   }
 
   .slogan {
@@ -223,53 +157,9 @@ body {
     margin-top: 35px;
   }
 
-  #newsletter .help-inline {
-    font-size: 20px;
-    margin-right: 8px;
-  }
-
-  #newsletter input {
-    height: 26px;
-    font-size: 20px;
-  }
-
-  #newsletter input[type=submit] {
-    margin-left: 8px;
-    height: 38px;
-    font-size: 20px;
-  }
-  
-  #editions {
-    text-align: center;
-    margin-bottom: 1em;
-  }
-  
-  #editions ul {
-    font-size: 18px;
-  }
-
-  #editions ul li:first-child {
-    display: block;
-    padding: 0;
-    margin-bottom: 8px;
-  }
-
-  #editions ul li:first-child:after {
-    content: none;
-  }
 }
 
 @media (max-width: 767px) {
-  .icon {
-    width: 40px;
-    height: 40px;
-    margin-right: 18px;
-  }
-
-  .icon.twitter  { background-position: 0 -48px }
-  .icon.facebook { background-position: -40px -48px }
-  .icon.linkedin { background-position: -80px -48px }
-
   .jumbotron {
     margin-top: 30px;
   }
@@ -296,27 +186,6 @@ body {
     margin-top: 25px;
   }
 
-  #newsletter .help-inline {
-    font-size: 18px;
-    margin-right: 0;
-    margin-bottom: 8px;
-  }
-
-  #newsletter input {
-    height: 22px;
-    font-size: 18px;
-  }
-
-  #newsletter input[type=submit] {
-    margin-left: 0;
-    margin-top: 10px;
-    height: 30px;
-    font-size: 16px;
-  }
-
-  #editions {
-    margin-top: 30px;
-  }
 }
 
 @media (max-width: 480px) {
@@ -349,32 +218,4 @@ body {
     margin-bottom: 25px;
   }
 
-  #newsletter .help-inline {
-    font-size: 16px;
-    margin-bottom: 5px;
-  }
-
-  #newsletter input {
-    height: 20px;
-    font-size: 16px;
-  }
-
-  #newsletter input[type=submit] {
-    margin-left: 0;
-    margin-top: 8px;
-    height: 28px;
-    font-size: 14px;
-  }
-
-  #editions {
-    margin-top: 25px;
-  }
-
-  #editions ul {
-    font-size: 15px;
-  }
-
-  #editions li li:first-child {
-    margin-bottom: 8px;
-  }
 }
