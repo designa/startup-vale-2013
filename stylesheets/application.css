@@ -1,4 +1,10 @@
-@font-face {
+/*
+*
+* Green color 1: #7dbf0c
+* Green color 2: #66990e;
+*/
+
+/*@font-face {
 	font-family: 'AvalonDemi';
 	font-style: normal;
 	font-weight: normal;
@@ -12,19 +18,29 @@
 	font-weight: normal;
 	src: url("../fonts/Avalon-Book-webfont.eot");
 	src: url("../fonts/Avalon-Book-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/Avalon-Book-webfont.woff") format("woff"),url("../fonts/Avalon-Book-webfont.ttf") format("truetype"),url("../fonts/Avalon-Book-webfont.svg#avalonregular") format("svg");
-}
+}*/
 
 body {
-  background-color: #000033;
   color: #FFFFFF;
-  font-family: "AvalonBook", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
 }
 
+#first-content {
+  background: #7dbf0c;
+  background: -moz-linear-gradient(top,  #7dbf0c 0%, #66990e 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7dbf0c), color-stop(100%,#66990e));
+  background: -webkit-linear-gradient(top,  #7dbf0c 0%,#66990e 100%);
+  background: -o-linear-gradient(top,  #7dbf0c 0%,#66990e 100%);
+  background: -ms-linear-gradient(top,  #7dbf0c 0%,#66990e 100%);
+  background: linear-gradient(to bottom,  #7dbf0c 0%,#66990e 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7dbf0c', endColorstr='#66990e',GradientType=0 );
+}
+
 .slogan {
-  font-family: "AvalonDemi";
-  border-left: 10px solid #E20031;
+  /*font-family: "AvalonDemi";*/
+  border-left: 10px solid #3f5d0b;
   padding-left: 20px;
   font-size: 102px;
 }
@@ -35,7 +51,7 @@ body {
 }
 
 .slogan span.motto {
-  color: #E20031;
+  color: #3f5d0b;
 }
 
 .slogan p.location {
@@ -44,7 +60,7 @@ body {
 }
 
 .jumbotron {
-  margin-top: 90px;
+  padding-top: 90px;
 }
 
 .jumbotron h1.logo {
@@ -53,7 +69,8 @@ body {
   text-shadow: none;
   margin: 0;
   padding: 0;
-  background: url("../images/rupy-2013-logo-1.png") no-repeat center top;
+  background: url("../images/rocket.png") no-repeat center top;
+  background-size: contain;
 }
 
 .jumbotron h1.logo, .slogan {
@@ -62,17 +79,39 @@ body {
 
 .event-photo{
   display: block;
-  height: 250px;
   margin: 0 auto;
   width: 100%;
+}
+
+#about-event {
+  background: transparent url(../images/mountain.png) no-repeat center bottom;
+  background-size: contain;
+}
+
+#about-event .content{
+  padding-top: 100px;
+}
+
+#newsletter .container{
+  background: #fff;
+  color: #666;
+  padding: 20px;
 }
 
 #newsletter form {
   margin: 0;
 }
 
+#newsletter #input-newsletter-email,
+#newsletter .btn-success {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+}
+
 #newsletter #input-newsletter-email{
-  height: 36px;
+  background: #e8e8e7;
+  height: 44px;
   width: 100%;
 
   box-sizing: border-box;
@@ -80,9 +119,17 @@ body {
   -moz-box-sizing: border-box;
 }
 
+#other-events.jumbotron {
+  padding-bottom: 90px;
+}
+
 #other-events .event-photo{
   height: 160px;
   margin: 0 0 8px 0;
+}
+
+#second-content {
+  color: #b0b0b0;
 }
 
 .footer-copyright {
@@ -107,7 +154,7 @@ body {
   }
 
   .jumbotron h1.logo {
-    background-image: url("../images/rupy-2013-logo-2.png");
+    background-image: url("../images/rocket.png");
   }
 
   .jumbotron h1.logo, .slogan {
@@ -150,7 +197,7 @@ body {
 
   .jumbotron h1.logo {
     height: 440px;
-    background-image: url("../images/rupy-2013-logo-2.png");
+    background-image: url("../images/rocket.png");
   }
 
   #newsletter {
@@ -179,7 +226,7 @@ body {
 
   .jumbotron h1.logo {
     height: 350px;
-    background-image: url("../images/rupy-2013-logo-3.png");
+    background-image: url("../images/rocket.png");
   }
 
   #newsletter {
@@ -211,7 +258,7 @@ body {
 
   .jumbotron h1.logo {
     height: 241px;
-    background-image: url("../images/rupy-2013-logo-4.png");
+    background-image: url("../images/rocket.png");
   }
 
   #newsletter {
