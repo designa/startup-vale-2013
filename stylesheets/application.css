@@ -4,15 +4,15 @@
 * Green color 2: #66990e;
 */
 
-/*@font-face {
-	font-family: 'AvalonDemi';
+@font-face {
+	font-family: 'FuturaBold';
 	font-style: normal;
 	font-weight: normal;
-	src: url("../fonts/Avalon-Demi-webfont.eot");
-	src: url("../fonts/Avalon-Demi-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/Avalon-Demi-webfont.woff") format("woff"),url("../fonts/Avalon-Demi-webfont.ttf") format("truetype"),url("../fonts/Avalon-Demi-webfont.svg#avalonbold") format("svg");
+	src: url("../fonts/futura_bold_bt-webfont.eot");
+	src: url("../fonts/futura_bold_bt-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/futura_bold_bt-webfont.woff") format("woff"),url("../fonts/futura_bold_bt-webfont.ttf") format("truetype"),url("../fonts/futura_bold_bt-webfont.svg#avalonbold") format("svg");
 }
 
-@font-face {
+/*@font-face {
 	font-family: 'AvalonBook';
 	font-style: normal;
 	font-weight: normal;
@@ -27,6 +27,17 @@ body {
   line-height: 1.5em;
 }
 
+dt {
+  margin-bottom: 4px;
+}
+dd {
+  margin-bottom: 12px;
+}
+
+.is-shadow {
+  text-shadow: 0 1px 1px #222;
+}
+
 #first-content {
   background: #7dbf0c;
   background: -moz-linear-gradient(top,  #7dbf0c 0%, #66990e 100%);
@@ -39,8 +50,8 @@ body {
 }
 
 .slogan {
-  /*font-family: "AvalonDemi";*/
-  border-left: 10px solid #3f5d0b;
+  font-family: "FuturaBold";
+  border-left: 10px solid #66990e;
   padding-left: 20px;
   font-size: 102px;
 }
@@ -51,12 +62,13 @@ body {
 }
 
 .slogan span.motto {
-  color: #3f5d0b;
+  color: #66990e;
+  margin: 28px 0;
 }
 
 .slogan p.location {
   font-size: 24px;
-  padding-top: 6px;
+  /*padding-top: 6px;*/
 }
 
 .jumbotron {
@@ -69,7 +81,7 @@ body {
   text-shadow: none;
   margin: 0;
   padding: 0;
-  background: url("../images/rocket.png") no-repeat center top;
+  background: url("../images/logo-startup-vale.png") no-repeat center top;
   background-size: contain;
 }
 
@@ -86,10 +98,6 @@ body {
 #about-event {
   background: transparent url(../images/mountain.png) no-repeat center bottom;
   background-size: contain;
-}
-
-#about-event .content{
-  padding-top: 100px;
 }
 
 #newsletter .container{
@@ -119,6 +127,21 @@ body {
   -moz-box-sizing: border-box;
 }
 
+#location-map{
+  background: #fff;
+  border: none;
+  height: 480px;
+  width: 100%;
+
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#location-map img {
+  max-width: initial;
+}
+
 #other-events.jumbotron {
   padding-bottom: 90px;
 }
@@ -137,15 +160,30 @@ body {
   padding-bottom: 60px;
 }
 
+#execution .event-owner {
+  display: block;
+  margin-top: 24px;
+}
+
 .footer-copyright {
   margin: 20px 0;
   text-align: center;
 }
 
 
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1200px) {
   .slogan {
-    font-size: 118px;
+    font-size: 100px;
     padding-left: 25px;
   }
 
@@ -155,18 +193,33 @@ body {
 
   .slogan p.location {
     font-size: 38px;
-    padding-top: 18px;
+    padding-top: 12px;
   }
 
   .jumbotron h1.logo {
-    background-image: url("../images/rocket.png");
+    background-image: url("../images/logo-startup-vale.png");
   }
 
   .jumbotron h1.logo, .slogan {
     height: 420px;
   }
 
+  #about-event .content{
+    padding-top: 40px;
+  }
+
 }
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 979px) {
   .jumbotron {
@@ -202,7 +255,7 @@ body {
 
   .jumbotron h1.logo {
     height: 440px;
-    background-image: url("../images/rocket.png");
+    background-image: url("../images/logo-startup-vale.png");
   }
 
   #newsletter {
@@ -210,6 +263,17 @@ body {
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 767px) {
   .jumbotron {
@@ -231,7 +295,7 @@ body {
 
   .jumbotron h1.logo {
     height: 350px;
-    background-image: url("../images/rocket.png");
+    background-image: url("../images/logo-startup-vale.png");
   }
 
   #newsletter {
@@ -239,6 +303,18 @@ body {
   }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 480px) {
   body {
@@ -263,7 +339,7 @@ body {
 
   .jumbotron h1.logo {
     height: 241px;
-    background-image: url("../images/rocket.png");
+    background-image: url("../images/logo-startup-vale.png");
   }
 
   #newsletter {
