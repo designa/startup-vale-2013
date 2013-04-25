@@ -12,14 +12,6 @@
 	src: url("../fonts/futura_bold_bt-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/futura_bold_bt-webfont.woff") format("woff"),url("../fonts/futura_bold_bt-webfont.ttf") format("truetype"),url("../fonts/futura_bold_bt-webfont.svg#avalonbold") format("svg");
 }
 
-/*@font-face {
-	font-family: 'AvalonBook';
-	font-style: normal;
-	font-weight: normal;
-	src: url("../fonts/Avalon-Book-webfont.eot");
-	src: url("../fonts/Avalon-Book-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/Avalon-Book-webfont.woff") format("woff"),url("../fonts/Avalon-Book-webfont.ttf") format("truetype"),url("../fonts/Avalon-Book-webfont.svg#avalonregular") format("svg");
-}*/
-
 body {
   color: #FFFFFF;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -53,7 +45,7 @@ dd {
   font-family: "FuturaBold";
   border-left: 10px solid #66990e;
   padding-left: 20px;
-  font-size: 102px;
+  font-size: 90px;
 }
 
 .slogan span {
@@ -81,7 +73,7 @@ dd {
   text-shadow: none;
   margin: 0;
   padding: 0;
-  background: url("../images/logo-startup-vale.png") no-repeat center top;
+  background: url("../images/logo-startup-vale.png") no-repeat center;
   background-size: contain;
 }
 
@@ -98,6 +90,18 @@ dd {
 #about-event {
   background: transparent url(../images/mountain.png) no-repeat center bottom;
   background-size: contain;
+}
+
+#info-box .container{
+  background: #fff;
+  border-bottom: 4px solid #66990e;
+  color: #666;
+  padding: 20px;
+}
+
+#info-box .container h3,
+#newsletter .container h3 {
+  color: #000;
 }
 
 #newsletter .container{
@@ -144,6 +148,11 @@ dd {
 
 #other-events.jumbotron {
   padding-bottom: 90px;
+}
+
+#other-events .event-title {
+  color: #f0f0f0;
+  font-size: 20px;
 }
 
 #other-events .event-photo{
