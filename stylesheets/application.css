@@ -26,6 +26,10 @@ dd {
   margin-bottom: 12px;
 }
 
+.lead {
+  font-size: 18px;
+}
+
 .is-shadow {
   text-shadow: 0 1px 1px #222;
 }
@@ -92,22 +96,30 @@ dd {
   background-size: contain;
 }
 
-#info-box .container{
+#info-box .container,
+#location .container{
   background: #fff;
-  border-bottom: 4px solid #66990e;
+  border-bottom: 10px solid #66990e;
   color: #666;
+}
+
+#location .container {
+  padding: 0;
+}
+
+#info-box .container .span6,
+#location .about-event-infos {
   padding: 20px;
+
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
 
 #info-box .container h3,
-#newsletter .container h3 {
+#newsletter .container h3,
+#location .container h3 {
   color: #000;
-}
-
-#newsletter .container{
-  background: #fff;
-  color: #666;
-  padding: 20px;
 }
 
 #newsletter form {
@@ -134,7 +146,7 @@ dd {
 #location-map{
   background: #fff;
   border: none;
-  height: 480px;
+  height: 540px;
   width: 100%;
 
   box-sizing: border-box;
@@ -150,6 +162,10 @@ dd {
   padding-bottom: 90px;
 }
 
+#other-events .main-title {
+  margin-bottom: 30px;
+}
+
 #other-events .event-title {
   color: #f0f0f0;
   font-size: 20px;
@@ -162,11 +178,33 @@ dd {
 
 #second-content {
   color: #b0b0b0;
+  padding-top: 30px;
 }
 
 #execution .container {
   border-bottom: 1px solid #ccc;
   padding-bottom: 60px;
+}
+
+.events-link {
+  background: transparent no-repeat center;
+  display: block;
+  height: 160px;
+  text-indent: -99999px;
+}
+
+.events-link.agile-vale {
+  background-color: #ea4445;
+  background-image: url(../images/logo-agile-vale.png);
+}
+
+.events-link.rupy {
+  background-color: #000033;
+  background-image: url(../images/logo-rupy.png);
+}
+
+.events-link img {
+  visibility: hidden;
 }
 
 #execution .event-owner {
@@ -231,10 +269,6 @@ dd {
 
 
 @media (max-width: 979px) {
-  .jumbotron {
-    margin-top: 60px;
-  }
-
   .jumbotron .span4, .jumbotron .span8 {
     width: 100%;
     float: none;
@@ -263,12 +297,17 @@ dd {
   }
 
   .jumbotron h1.logo {
-    height: 440px;
-    background-image: url("../images/logo-startup-vale.png");
+    height: 220px;
+    margin-bottom: 20px;
   }
 
-  #newsletter {
-    margin-top: 35px;
+  #newsletter .row-fluid .span4,
+  #other-events .row-fluid .span8 {
+    margin: 0;
+  }
+
+  #other-events .events-link {
+    margin-bottom: 20px;
   }
 
 }
@@ -285,8 +324,13 @@ dd {
 
 
 @media (max-width: 767px) {
-  .jumbotron {
-    margin-top: 30px;
+
+  body {
+    padding: 0;
+  }
+
+  .container {
+    padding: 20px;
   }
 
   .slogan {
@@ -302,13 +346,16 @@ dd {
     font-size: 22px;
   }
 
-  .jumbotron h1.logo {
-    height: 350px;
-    background-image: url("../images/logo-startup-vale.png");
+  #other-events .events-link.rupy {
+    margin-top: 80px;
   }
 
-  #newsletter {
-    margin-top: 25px;
+  #second-content.jumbotron {
+    padding-top: 0;
+  }
+
+  #execution .event-owner {
+   max-width: 300px;
   }
 
 }
@@ -330,10 +377,6 @@ dd {
     min-height: 480px;
   }
 
-  .jumbotron {
-    margin-top: 25px;
-  }
-
   .slogan {
     font-size: 19.8px;
   }
@@ -345,14 +388,4 @@ dd {
   .slogan p.location {
     font-size: 17px;
   }
-
-  .jumbotron h1.logo {
-    height: 241px;
-    background-image: url("../images/logo-startup-vale.png");
-  }
-
-  #newsletter {
-    margin-bottom: 25px;
-  }
-
 }

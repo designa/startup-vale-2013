@@ -1,23 +1,23 @@
-;(function(w, d, u) {
+;(function(w, d, g, u) {
 
-  var marker, position, map;
+  var marker, position, config, map, gMaps = g.maps;
 
-  position = new google.maps.LatLng(-23.156371,-45.792925),
+  position = new gMaps.LatLng(-23.156371,-45.792925),
 
   config = {
       center: position,
       mapTypeControl: false,
-      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      mapTypeId: gMaps.MapTypeId.ROADMAP,
       scrollwheel: false,
       zoom: 16
   };
 
-  map = new google.maps.Map(d.getElementById("location-map"), config);
+  map = new gMaps.Map(d.getElementById("location-map"), config);
 
-  marker = new google.maps.Marker({
-      animation: google.maps.Animation.BOUNCE,
+  marker = new gMaps.Marker({
+      animation: gMaps.Animation.BOUNCE,
       map: map,
       position: position
   });
 
-}(window, document, undefined));
+}(window, document, google, undefined));
