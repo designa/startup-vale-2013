@@ -377,6 +377,10 @@ dd {
     min-height: 480px;
   }
 
+  #first-content header.jumbotron {
+    padding-top: 0;
+  }
+
   .slogan {
     font-size: 19.8px;
   }
