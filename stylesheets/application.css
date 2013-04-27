@@ -372,24 +372,36 @@ dd {
 
 
 
-@media (max-width: 480px) {
+@media (max-width: 490px) {
   body {
     min-height: 480px;
   }
 
-  #first-content header.jumbotron {
+  .jumbotron {
+    padding-top: 45px;
+  }
+
+  #first-content .jumbotron:first-child {
     padding-top: 0;
   }
 
+  .jumbotron h1.logo {
+    height: 150px;
+  }
+
   .slogan {
-    font-size: 19.8px;
+    font-size: 36px;
   }
 
   .slogan span {
-    line-height: 20px;
+    line-height: normal;
   }
 
   .slogan p.location {
     font-size: 17px;
+  }
+
+  #location-map {
+    height: 200px;
   }
 }
