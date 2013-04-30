@@ -1,0 +1,4 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteCond %{http_host} ^www.startupvale.com.br [NC]
+RewriteRule ^(.*)$ http://startupvale.com.br/$1 [R=301,L]
