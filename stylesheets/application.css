@@ -107,7 +107,7 @@ dd {
   padding: 0;
 }
 
-#info-box .container .span6,
+#info-box .container .span12,
 #location .about-event-infos {
   padding: 20px;
 
@@ -117,30 +117,41 @@ dd {
 }
 
 #info-box .container h3,
-#newsletter .container h3,
 #location .container h3 {
   color: #000;
 }
 
-#newsletter form {
+#speaker-area .speakers-confirmed {
+  margin: 0 0 20px 0;
+}
+#speaker-area .speakers-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#speaker-area .speakers-item {
+  background: #fff;
+  float: left;
+  margin: 0 12px 12px 0;
+  padding: 20px 20px 10px;
+  text-align: center;
+}
+#speaker-area .speaker-photo,
+#speaker-area .speaker-photo .photo {
+  display: block;
+  height: 170px;
+  width: 170px;
+}
+#speaker-area .speaker-photo {
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.speakers-name {
   margin: 0;
 }
-
-#newsletter #input-newsletter-email,
-#newsletter .btn-success {
-  border-radius: 0;
-  -webkit-border-radius: 0;
-  -moz-border-radius: 0;
-}
-
-#newsletter #input-newsletter-email{
-  background: #e8e8e7;
-  height: 44px;
-  width: 100%;
-
-  box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
+.speakers-bio {
+  color: #34495E;
 }
 
 #location-map{
@@ -158,17 +169,33 @@ dd {
   max-width: initial;
 }
 
+#eventicket {
+  height: 415px;
+  width: 100%;
+}
+
+.eventicket-link {
+  display: none;
+}
+
+.ticket-hot-news {
+  color: #ECF0F1;
+  text-align: center;
+}
+
+
 #other-events.jumbotron {
   padding-bottom: 90px;
 }
 
 #other-events .main-title {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 #other-events .event-title {
   color: #f0f0f0;
   font-size: 20px;
+  margin-bottom: 8px;
 }
 
 #other-events .event-photo{
@@ -189,7 +216,7 @@ dd {
 .events-link {
   background: transparent no-repeat center;
   display: block;
-  height: 160px;
+  height: 180px;
   text-indent: -99999px;
 }
 
@@ -210,6 +237,7 @@ dd {
 #execution .event-owner {
   display: block;
   margin-top: 24px;
+  max-width: 200px;
 }
 
 .footer-copyright {
@@ -324,7 +352,6 @@ dd {
 
 
 @media (max-width: 767px) {
-
   body {
     padding: 0;
   }
@@ -355,7 +382,7 @@ dd {
   }
 
   #execution .event-owner {
-   max-width: 300px;
+    margin: 0 auto;
   }
 
 }
@@ -364,7 +391,11 @@ dd {
 
 
 
-
+@media (max-width: 613px){
+  #eventicket {
+    height: 538px;
+  }
+}
 
 
 
@@ -398,10 +429,24 @@ dd {
   }
 
   .slogan p.location {
-    font-size: 17px;
+    font-size: 21px;
+  }
+
+  #speaker-area .speakers-item {
+    display: block;
+    float: none;
+    margin: 12px 0 0 0;
   }
 
   #location-map {
     height: 200px;
+  }
+
+  #eventicket {
+    display: none;
+  }
+
+  .eventicket-link {
+    display: block;
   }
 }
