@@ -183,11 +183,6 @@ dd {
   text-align: center;
 }
 
-
-#other-events.jumbotron {
-  padding-bottom: 90px;
-}
-
 #other-events .main-title {
   margin-bottom: 15px;
 }
@@ -246,7 +241,9 @@ dd {
 }
 
 
-
+.box-registration{
+  height: 300px;
+}
 
 
 
@@ -276,7 +273,7 @@ dd {
   }
 
   .jumbotron h1.logo, .slogan {
-    height: 420px;
+    height: 250px;
   }
 
   #about-event .content{
