@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <title>StartupVale - São José dos Campos/SP, Brazil</title>
@@ -171,7 +171,7 @@
         </div>
       </div>
 
-      <div id="enrollment" class="jumbotron box-registration">
+      <div id="enrollment" class="jumbotron">
         <div class="container">
           <div class="row">
             <div class="span12">
@@ -179,7 +179,7 @@
                 <h2>Garanta agora seu ingresso por <span class="title-hot">R$ 50,00</span></h2>
                 <p class="lead">Veja abaixo as datas para compras dos ingressos. E não perca tempo, compre agora!</p>
               </div>
-              <iframe id="eventicket" src="http://www.eventick.com.br/startup-vale-2013/embedded" frameborder="0" vspace="0" hspace="0" marginheight="5" marginwidth="0" scrolling="auto" allowtransparency="true"></iframe>
+              <iframe class="eventicket-iframe" src="http://www.eventick.com.br/startup-vale-2013/embedded" frameborder="0" vspace="0" hspace="0" marginheight="5" marginwidth="0" scrolling="auto" allowtransparency="true"></iframe>
               <a href="http://www.eventick.com.br/startup-vale-2013/" class="eventicket-link btn btn-info btn-block btn-large">Comprar agora!</a>
             </div>
           </div>
@@ -226,7 +226,7 @@
         </div>
       </div>
 
-      <div id="enrollment-bundle" class="jumbotron box-registration">
+      <div id="enrollment-bundle" class="jumbotron">
         <div class="container">
           <div class="row">
             <div class="span12">
@@ -234,7 +234,7 @@
                 <h2>Garanta seu bundle dos três eventos do vale a partir de <span class="title-hot">R$ 140,00</span></h2>
                 <p class="lead">Veja abaixo as datas para compras dos ingressos. E não perca tempo, compre agora!</p>
               </div>
-              <iframe id="eventicket" src="http://www.eventick.com.br/startup-agilevale-rupy2013/embedded" frameborder="0" vspace="0" hspace="0" marginheight="5" marginwidth="0" scrolling="auto" allowtransparency="true"></iframe>
+              <iframe class="eventicket-iframe" src="http://www.eventick.com.br/startup-agilevale-rupy2013/embedded" frameborder="0" vspace="0" hspace="0" marginheight="5" marginwidth="0" scrolling="auto" allowtransparency="true"></iframe>
               <a href="http://www.eventick.com.br/startup-agilevale-rupy2013/" class="eventicket-link btn btn-info btn-block btn-large">Comprar agora!</a>
             </div>
           </div>
@@ -251,6 +251,12 @@
               <div class="row-fluid">
                 <div class="span9">
                   <h3>Patrocínio:</h3>
+                  <p>
+                    Se a sua empresa quer patrocinar ou <br>
+                    apoiar o StartupVale, entre em contato: <br>
+                    <a href="mailto:startupvale@designa.com.br">startupvale@designa.com.br</a> <br>
+                    + 55 12 3643-4707
+                  </p>
                 </div>
                 <div class="span3">
                   <h3>Realização:</h3>
@@ -267,6 +273,30 @@
       <p class="footer-copyright">Todos os direitos reservados @ Designa 2013</p>
     </div>
     <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
-    <script src="javascript/application.min.js"></script>
+    <script>
+      ;(function(w, d, g, u) {
+
+        var marker, position, config, map, gMaps = g.maps;
+
+        position = new gMaps.LatLng(-23.156371,-45.792925),
+
+        config = {
+            center: position,
+            mapTypeControl: false,
+            mapTypeId: gMaps.MapTypeId.ROADMAP,
+            scrollwheel: false,
+            zoom: 16
+        };
+
+        map = new gMaps.Map(d.getElementById("location-map"), config);
+
+        marker = new gMaps.Marker({
+            animation: gMaps.Animation.BOUNCE,
+            map: map,
+            position: position
+        });
+
+      }(window, document, google, undefined));
+    </script>
   </body>
 </html>
