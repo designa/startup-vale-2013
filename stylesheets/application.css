@@ -5,11 +5,11 @@
 */
 
 @font-face {
-	font-family: 'FuturaBold';
-	font-style: normal;
-	font-weight: normal;
-	src: url("../fonts/futura_bold_bt-webfont.eot");
-	src: url("../fonts/futura_bold_bt-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/futura_bold_bt-webfont.woff") format("woff"),url("../fonts/futura_bold_bt-webfont.ttf") format("truetype"),url("../fonts/futura_bold_bt-webfont.svg#avalonbold") format("svg");
+  font-family: 'FuturaBold';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/futura_bold_bt-webfont.eot");
+  src: url("../fonts/futura_bold_bt-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/futura_bold_bt-webfont.woff") format("woff"),url("../fonts/futura_bold_bt-webfont.ttf") format("truetype"),url("../fonts/futura_bold_bt-webfont.svg#avalonbold") format("svg");
 }
 
 body {
@@ -275,7 +275,7 @@ dd {
   }
 
   .jumbotron h1.logo, .slogan {
-    height: 250px;
+    height: 420px;
   }
 
   #about-event .content{
