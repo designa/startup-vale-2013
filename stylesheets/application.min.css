@@ -48,10 +48,6 @@ dd {
   font-size: 18px;
 }
 
-.clear-left {
-  clear: left;
-}
-
 .is-shadow {
   text-shadow: 0 1px 1px #222;
 }
@@ -194,7 +190,8 @@ dd {
 }
 
 .eventicket-iframe {
-  height: 254px;
+  height: 275px;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -232,14 +229,11 @@ dd {
   padding-bottom: 60px;
 }
 
-.support-list .support-item {
+.support-list .support-item,
+.sponsor-list .sponsor-item {
   float: left;
-  margin: 0 12px 12px 0;
+  margin: 0 24px 12px 0;
   width: 120px;
-}
-
-.support-list .support-item:hover {
-  opacity: .7;
 }
 
 .events-link {

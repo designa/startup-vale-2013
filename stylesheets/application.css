@@ -210,10 +210,15 @@ dd {
   padding-bottom: 60px;
 }
 
-.support-list .support-item {
+.support-list .support-item,
+.sponsor-list .sponsor-item {
   float: left;
   margin: 0 12px 12px 0;
   width: 120px;
+}
+
+.support-list .support-item {
+  clear: right;
 }
 
 .events-link {
