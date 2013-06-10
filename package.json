@@ -1,0 +1,10 @@
+{
+  "name": "startupvale2013",
+  "description": "Minificando CSS do projeto",
+  "author": "Eduardo Rabelo <oieduardorabelo@gmail.com>",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.6.1",
+    "grunt-shell": "~0.2.2"
+  }
+}
