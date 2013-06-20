@@ -267,6 +267,11 @@ td {
   width: 120px;
 }
 
+sponsor-diamond {
+  float: left;
+  margin: 0 12px 12px 0;
+  width: 200px;
+}
 .support-list .support-item {
   clear: right;
 }
