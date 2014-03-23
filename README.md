@@ -12,6 +12,8 @@ Você precisará dos seguintes pacotes instalados na sua máquina:
 ### Grunt Task
 A task `default` do **Grunt** fará a minifiação e concatenação de todos os arquivos CSS da pasta `stylesheets` para o arquivo `application.min.css`
 
+O arquivo **index.html** está sempre apontando para os arquivos **.min** de **CSS**,
+
 # Licença
 
 MIT: http://designa.mit-license.org
